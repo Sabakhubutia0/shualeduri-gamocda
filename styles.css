@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1500px;
   width: 100%;
   margin: 54px auto;
 }
@@ -109,6 +109,13 @@ h2 {
 
 .aitem-2 {
   grid-row: -1/3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+h1 {
+  font-size: 48px;
 }
 
 .box2 {
@@ -116,9 +123,36 @@ h2 {
   width: 100%;
   background-image: url(img/section-1\ photo.png);
   background-position: center;
+  font-size: 16px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 /* section 22 */
@@ -234,4 +268,41 @@ h1 {
 .property-details span {
   flex: 1;
   text-align: center;
+}
+
+/* footer  */
+
+.container2 {
+  max-width: 1640px;
+  width: 100%;
+  padding: 50px;
+  margin: 20px auto;
+  border-radius: 25px;
+}
+
+footer {
+  background-color: #29b24e;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.flex-foter {
+  display: flex;
+  gap: 48px;
+}
+
+.center-foter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
 }
