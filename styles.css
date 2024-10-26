@@ -75,12 +75,12 @@ h2 {
   grid-auto-rows: minmax(200px, auto);
 }
 
-.box1 {
-  margin-left: 20px;
+.parent {
+  display: flex;
 }
 
-.box {
-  background-color: blue;
+.box1 {
+  margin-left: 20px;
 }
 
 .aitem-1 {
@@ -116,6 +116,10 @@ h2 {
 }
 h1 {
   font-size: 48px;
+}
+
+h3 {
+  color: #000000cc;
 }
 
 .box2 {
@@ -213,7 +217,7 @@ h1 {
   height: 40px;
   border-radius: 50%;
   position: absolute;
-  background-color: red;
+  background-color: #6d6d6d40;
 }
 
 .card2 img {
@@ -290,6 +294,7 @@ footer a {
 
 .card-footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
@@ -297,6 +302,7 @@ footer a {
 
 .flex-foter {
   display: flex;
+  flex-wrap: wrap;
   gap: 48px;
 }
 
@@ -305,4 +311,55 @@ footer a {
   justify-content: center;
   align-items: center;
   margin-top: 32px;
+}
+
+/* @media  */
+
+@media (width < 430px) {
+  .container {
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  nav,
+  .bt-class {
+    display: none;
+  }
+
+  .box2 {
+    order: -1;
+    width: 335px;
+    height: 435px;
+    border-radius: 24px;
+    font-size: 14px;
+    margin: 28px 6% 20px 6%;
+  }
+
+  .box2 h1 {
+    font-size: 24px;
+  }
+
+  .aitem-1 {
+    background-color: #f8f8f8;
+    border-radius: 24px;
+  }
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .li-none {
+    display: none;
+  }
+
+  .card-footer ul {
+    display: block;
+  }
+
+  .flex-foter {
+    display: block;
+  }
 }
