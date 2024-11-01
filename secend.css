@@ -73,6 +73,10 @@ li {
   gap: 10px;
 }
 
+.img-none-section {
+  display: none;
+}
+
 .box1 {
   max-width: 810px;
   width: 100%;
@@ -105,7 +109,7 @@ li {
   margin: 40px;
 }
 
-.vip-tag {
+.vip1 {
   background-color: #29b24e;
   color: white;
   padding: 5px 10px;
@@ -361,4 +365,163 @@ footer a {
   justify-content: center;
   align-items: center;
   margin-top: 32px;
+}
+
+.display-none {
+  display: none;
+}
+
+/* @media */
+
+@media (width < 430px) {
+  .container {
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  header {
+    display: none;
+  }
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box1 {
+    max-width: 335px;
+    width: 100%;
+    height: 316px;
+    margin: 20px;
+  }
+
+  .box2 {
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .span-class {
+    margin: 10px;
+  }
+
+  .list-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-a-none {
+    display: none;
+  }
+
+  .aitem-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aitem--1 {
+    display: block;
+  }
+  .media-none {
+    display: none;
+  }
+
+  .color-span1 {
+    margin-left: -4em;
+  }
+  .last-call {
+    margin-left: -30px;
+    width: 334px;
+    height: 47px;
+    margin-top: 12px;
+  }
+
+  .last-sent {
+    margin-left: -30px;
+    width: 334px;
+    height: 47px;
+    margin-top: 40px;
+  }
+
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .li-none {
+    display: none;
+  }
+
+  .card-footer ul {
+    display: block;
+  }
+
+  .flex-foter {
+    display: block;
+  }
+
+  .display-none {
+    display: flex;
+    justify-content: center;
+  }
+
+  .last-box {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .flex-foter {
+    display: block;
+  }
+
+  .display-none {
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  .box-item .icon {
+    margin-bottom: 5px;
+  }
+
+  .sell {
+    background: #29b24e;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    position: relative;
+    top: -20px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .sell .label {
+    color: black;
+    margin-top: 8px;
+  }
 }
